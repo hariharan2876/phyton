@@ -1,0 +1,21 @@
+{
+  "filenames": [
+    { "label": "data.xlsx", "description": "Default data file" },
+    { "label": "template.xlsx", "description": "Template file" },
+    { "label": "report.xlsx", "description": "Report file" }
+  ],
+  "columns": [
+    { "label": "Name, Age, City", "description": "Basic personal info" },
+    { "label": "Instructions, Quantity, Category", "description": "Inventory format" },
+    { "label": "Subscriber, Spouse, Child", "description": "Family format" }
+  ],
+  "familyOf4": [
+    { "label": "1,Subscriber+Spouse+Teen+Child,5,Medicare,5,6001", "description": "Standard family of 4" },
+    { "label": "2,Subscriber+Spouse+2Kids,4,Private,3,7002", "description": "Alt family of 4" }
+  ],
+  "ticketTitles": [
+    { "label": "Login issue", "description": "User cannot log in" },
+    { "label": "Password reset", "description": "Forgot password" },
+    { "label": "Access request", "description": "Requesting new access" }
+  ]
+}

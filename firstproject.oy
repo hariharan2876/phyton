@@ -1,0 +1,27 @@
+#String variables
+
+fname="hari"
+lastname="hariharan"
+print(fname+" "+lastname)
+print(type(fname+lastname))
+
+#Integer variables
+
+age=10
+age=age+5
+age+=5
+print(age)
+print(type(age))
+#here we are trying to concatenate string and integer which is not possibl
+#print("your age is " + age)
+#above line throws error because we cannot concatenate string and integer directly. We need to convert the integer to string first before concatenation.
+print("your age is " + str(age))
+#aove is called typecasting where we are converting integer to string to concatenate with other string
+
+height=5.9
+print("your height is " + str(height))
+print(type(height))
+
+valuefound=True
+print("value found is " + str(valuefound))
+print(type(valuefound))

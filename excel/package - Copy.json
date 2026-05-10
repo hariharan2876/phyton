@@ -1,0 +1,37 @@
+{
+  "name": "excel-mcp-extension",
+  "displayName": "Excel MCP Extension",
+  "publisher": "yourpublisher",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "main": "./out/extension.js",
+  "scripts": {
+    "compile": "tsc -p ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourorg/excel-mcp-extension.git"
+  },
+  "activationEvents": [
+  "onCommand:mcp.createExcel",
+  "onCommand:mcp.createSummarySheet",
+  "onCommand:mcp.generateTemplate"
+],
+"contributes": {
+  "commands": [
+    { "command": "mcp.createExcel", "title": "MCP: Create Excel" },
+    { "command": "mcp.createSummarySheet", "title": "MCP: Create Summary Sheet" },
+    { "command": "mcp.generateTemplate", "title": "MCP: Generate Template" }
+  ]
+},
+  "dependencies": {
+    "axios": "^1.15.2"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.9.36",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^6.0.3"
+  }
+}

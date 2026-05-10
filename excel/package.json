@@ -1,0 +1,57 @@
+{
+  "name": "excel-mcp-extension",
+  "displayName": "Excel MCP Extension",
+  "version": "1.0.0",
+  "publisher": "yourpublisher",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourorg/excel-mcp-extension.git"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onCommand:mcp.createExcel",
+    "onCommand:mcp.addFamilyOf4",
+    "onCommand:mcp.addFamilyOf2",
+    "onCommand:mcp.addSubscriber",
+    "onCommand:mcp.createTicket"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "mcp.createExcel",
+        "title": "MCP: Create Excel File"
+      },
+      {
+        "command": "mcp.addFamilyOf4",
+        "title": "MCP: Add Family of 4 to Excel"
+      },
+      {
+        "command": "mcp.addFamilyOf2",
+        "title": "MCP: Add Family of 2 to Excel"
+      },
+      {
+        "command": "mcp.addSubscriber",
+        "title": "MCP: Add Subscriber to Excel"
+      },
+      {
+        "command": "mcp.createTicket",
+        "title": "MCP: Create ServiceNow Ticket"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./"
+  },
+  "dependencies": {
+    "axios": "^1.15.2"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.9.36",
+    "@types/node": "^25.6.0",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^6.0.3"
+  }
+}

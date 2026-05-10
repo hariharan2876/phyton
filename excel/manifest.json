@@ -1,0 +1,39 @@
+{
+  "name": "Excel-MCP",
+  "version": "1.2.0",
+  "description": "Excel MCP server with template generation",
+  "actions": [
+    {
+      "name": "createExcel",
+      "parameters": {
+        "rows": { "type": "integer" },
+        "columns": { "type": "integer" }
+      },
+      "endpoint": "https://mcp.company.com/excel"
+    },
+    {
+      "name": "createSummarySheet",
+      "parameters": {
+        "title": { "type": "string" },
+        "data": { "type": "array", "items": { "type": "object" } }
+      },
+      "endpoint": "https://mcp.company.com/summary"
+    },
+    {
+      "name": "generateTemplate",
+      "parameters": {
+        "filename": { "type": "string" },
+        "fields": { "type": "array", "items": { "type": "string" } }
+      },
+      "endpoint": "https://mcp.company.com/template"
+    },
+    {
+      "name": "addSubscriber",
+      "parameters": {
+        "filename": { "type": "string" },
+        "row": { "type": "array", "items": { "type": "string" } }
+      },
+      "endpoint": "https://mcp.company.com/addSubscriber"
+    }
+  ]
+}
